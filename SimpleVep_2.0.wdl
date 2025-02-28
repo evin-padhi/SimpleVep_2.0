@@ -11,9 +11,6 @@ workflow Vep{
 
     String vep_assembly = "GRCh38"
     Int vep_version = 110
-    
-    Int mem_gb
-    Int disk_gb 
     String vep_docker = "vanallenlab/g2c-vep:latest"
 }
 call RunVep {
