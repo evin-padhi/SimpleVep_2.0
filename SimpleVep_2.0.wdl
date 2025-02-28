@@ -100,7 +100,6 @@ task RunVep {
     bootDiskSizeGb: 25
     preemptible: 3
   }
-}
 
 
 
