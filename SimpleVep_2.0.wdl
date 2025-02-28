@@ -11,7 +11,8 @@ workflow Vep{
 
     String vep_assembly = "GRCh38"
     Int vep_version = 110
-
+    
+    Int mem_gb
     Int disk_gb 
     String vep_docker = "vanallenlab/g2c-vep:latest"
 }
@@ -40,11 +41,9 @@ task RunVep {
         String output_file_prefix
         File reference_fasta
         File vep_cache_tarball
-        Array[String] vep_options
         String vep_assembly
-        Int vep_max_sv_size = 50
         Int vep_version = 110
-        Float mem_gb = 7.5
+        Float mem_gb 
         Int n_cpu = 4
         Int disk_gb
         String docker
