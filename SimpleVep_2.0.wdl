@@ -64,7 +64,6 @@ task RunVep {
       --force_overwrite \
       --species homo_sapiens \
       --assembly ~{vep_assembly} \
-      --max_sv_size ~{vep_max_sv_size} \
       --offline \
       --cache \
       --dir_cache "vep_cache/" \
