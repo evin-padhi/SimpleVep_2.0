@@ -88,7 +88,7 @@ task RunVep {
         docker: docker
         memory: "~{mem_gb} GB"
         cpu: n_cpu
-        disks: "local-disk" +  ~{disk_gb} + "GB HDD"
+        disks: "local-disk" +  disk_gb + "GB HDD"
         bootDiskSizeGb: 25
         preemptible: 3
     }
